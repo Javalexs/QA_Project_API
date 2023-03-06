@@ -20,7 +20,7 @@
 <code><img width="5%" title="Gradle" src="images/logo/Gradle.svg"></code>
 <code><img width="5%" title="Junit5" src="images/logo/Junit5.svg"></code>
 <code><img width="5%" title="GitHub" src="images/logo/GitHub.svg"></code>
-<code><img width="5%" title="Allure Report" src="images/logo/Allure.svg"></code>
+<code><img src="images/logo/Allure.svg" title="Allure Report" width="5%"/></code>
 <code><img width="5%" title="Allure TestOps" src="images/logo/Allure_TO.svg"></code>
 <code><img width="5%" title="Jenkins" src="images/logo/Jenkins.svg"></code>
 <code><img width="5%" title="Telegram" src="images/logo/Telegram.svg"></code>
