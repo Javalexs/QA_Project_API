@@ -1,5 +1,5 @@
 
-    package tests;
+package tests;
 
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.BeforeAll;
@@ -13,4 +13,4 @@ import static helpers.CustomApiListener.withCustomTemplates;
             RestAssured.filters(withCustomTemplates());
         }
     }
-}
+

@@ -1,7 +1,7 @@
 package tests;
 
-import models.LombokUserData;
-import models.User;
+import model.LombokUserData;
+import model.User;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static spec.Specs.request;
 import static spec.Specs.responseSpec200;
 
-public class ReqresInTests extends TestBase {
+public class CheckReqresTests extends TestBase {
 
     @Tag("Api")
     @Test

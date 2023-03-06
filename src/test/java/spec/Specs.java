@@ -1,14 +1,11 @@
-package Spec;
-
-public class Specs {
-    package spec;
+package spec;
 
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
-import static io.restassured.RestAssured.with;
 
+import static io.restassured.RestAssured.with;
     public class Specs {
         public static RequestSpecification request = with()
                 .baseUri("https://reqres.in")
@@ -20,4 +17,4 @@ import static io.restassured.RestAssured.with;
                 .expectStatusCode(200)
                 .build();
     }
-}
+
