@@ -14,16 +14,17 @@
 ### :technologist: Технологии и инструменты
 <p  align="center">
 
-<code><img width="5%" title="IntelliJ IDEA" src="images/logo/Idea.svg"></code>
-<code><img width="5%" title="Java" src="images/logo/Java.svg"></code>
-<code><img width="5%" title="Selenoid" src="images/logo/RestAssured.svg"></code>
-<code><img src="images/logo/Gradle.svg" title="Gradle" width="5%"/></code>
-<code><img width="5%" title="Junit5" src="images/logo/Junit5.svg"></code>
-<code><img width="5%" title="GitHub" src="images/icons/GitHub.svg"></code>
 <code><img width="5%" title="Allure Report" src="images/icons/Allure.svg"></code>
+<code><img width="5%" title="IntelliJ IDEA" src="images/icons/Idea.svg"></code>
+<code><img width="5%" title="Junit5" src="images/icons/Junit5.svg"></code>
+<code><img width="5%" title="Java" src="images/icons/Java.svg"></code>
+<code><img width="5%" title="Jenkins" src="images/icons/Jenkins.svg"></code>
+<code><img width="5%" title="Selenoid" src="images/icons/RestAssured.svg"></code>
+<code><img width="5%" title="Gradle" src="images/icons/Gradle.svg"  /></code>
 <code><img width="5%" title="Allure TestOps" src="images/icons/Allure_TO.svg"></code>
-<code><img width="5%" title="Jenkins" src="images/logo/Jenkins.svg"></code>
-<code><img width="5%" title="Telegram" src="images/logo/Telegram.svg"></code>
+<code><img width="5%" title="GitHub" src="images/icons/GitHub.svg"></code>
+
+[//]: # (<code><img width="5%" title="Telegram" src="images/logo/Telegram.svg"></code>) - телега
 
 </p>
 
