@@ -13,23 +13,26 @@ import static spec.Specs.request;
 import static spec.Specs.responseSpec200;
 
 public class CheckReqresTests extends TestBase {
-
-    @Tag("Api")
     @Test
-    @DisplayName("Проверка email, при помощи Groovy")
-    void checkEmailWithGroovy() {
-        given()
+    @DisplayName("Создание нового пользователя")
+    void createUser() {
+        User user = new User();
+        user.setName("morpheus");
+        user.setJob("leader");
+
+        User response = given()
                 .spec(request)
+                .body(user)
                 .when()
-                .get("/users")
+                .post("/users")
                 .then()
-                .spec(responseSpec200)
+                .statusCode(201)
                 .log().body()
-                .body("data.findAll{it.email =~/.*?@reqres.in/}.email.flatten()",
-                        hasItems("eve.holt@reqres.in"));
+                .extract().as(User.class);
+        assertEquals(response.getName(), user.getName());
+        assertEquals(response.getJob(), user.getJob());
     }
 
-    @Tag("Api")
     @Test
     @DisplayName("Успешная регистрация")
     void successfulRegister() {
@@ -52,7 +55,7 @@ public class CheckReqresTests extends TestBase {
         assertEquals("QpwL5tke4Pnpja7X4", response.getToken());
     }
 
-    @Tag("Api")
+
     @Test
     @DisplayName("Успешная авторизация")
     void successfulLogin() {
@@ -73,7 +76,20 @@ public class CheckReqresTests extends TestBase {
         assertEquals(response.getToken(), "QpwL5tke4Pnpja7X4");
     }
 
-    @Tag("Api")
+    @Test
+    @DisplayName("Проверка email, при помощи Groovy")
+    void checkEmailWithGroovy() {
+        given()
+                .spec(request)
+                .when()
+                .get("/users")
+                .then()
+                .spec(responseSpec200)
+                .log().body()
+                .body("data.findAll{it.email =~/.*?@reqres.in/}.email.flatten()",
+                        hasItems("eve.holt@reqres.in"));
+    }
+
     @Test
     @DisplayName("Неуспешная авторизация")
     void unsuccessfulLogin() {
@@ -93,28 +109,6 @@ public class CheckReqresTests extends TestBase {
         assertEquals(response.getError(), "Missing password");
     }
 
-    @Tag("Api")
-    @Test
-    @DisplayName("Создание нового пользователя")
-    void createUser() {
-        User user = new User();
-        user.setName("morpheus");
-        user.setJob("leader");
-
-        User response = given()
-                .spec(request)
-                .body(user)
-                .when()
-                .post("/users")
-                .then()
-                .statusCode(201)
-                .log().body()
-                .extract().as(User.class);
-        assertEquals(response.getName(), user.getName());
-        assertEquals(response.getJob(), user.getJob());
-    }
-
-    @Tag("Api")
     @Test
     @DisplayName("Обновление данных пользователя")
     void updateUser() {
@@ -135,7 +129,7 @@ public class CheckReqresTests extends TestBase {
         assertEquals(response.getJob(), user.getJob());
     }
 
-    @Tag("Api")
+
     @Test
     @DisplayName("Поиск пользователя")
     void singleUser() {
@@ -152,5 +146,4 @@ public class CheckReqresTests extends TestBase {
         assertEquals("2", response.getUser().getId());
         assertEquals("janet.weaver@reqres.in", response.getUser().getEmail());
     }
-
 }
