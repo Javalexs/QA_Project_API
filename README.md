@@ -1,4 +1,4 @@
-# Дипломный проект по автоматизации тестирования API для [reqres.in](https://reqres.in/)
+# Дипломный проект по автоматизации тестирования API для сайта: [reqres.in](https://reqres.in/)
 
 ##	Содержание
 
@@ -11,16 +11,16 @@
 - [Уведомления в Telegram с использованием бота](#-уведомления-в-telegram-с-использованием-бота)
 
 
-## :technologist: Технологии и инструменты
+### :technologist: Технологии и инструменты
 <p  align="center">
 
 <code><img width="5%" title="IntelliJ IDEA" src="images/logo/Idea.svg"></code>
 <code><img width="5%" title="Java" src="images/logo/Java.svg"></code>
 <code><img width="5%" title="Selenoid" src="images/logo/RestAssured.svg"></code>
-<code><img width="5%" title="Gradle" src="images/logo/Gradle.svg"></code>
+<code><img src="images/logo/Gradle.svg" title="Gradle" width="5%"/></code>
 <code><img width="5%" title="Junit5" src="images/logo/Junit5.svg"></code>
 <code><img width="5%" title="GitHub" src="images/logo/GitHub.svg"></code>
-<code><img src="images/logo/Allure.svg" title="Allure Report" width="5%"/></code>
+<code><img width="5%" title="Allure Report" src="images/logo/Allure.svg"></code>
 <code><img width="5%" title="Allure TestOps" src="images/logo/Allure_TO.svg"></code>
 <code><img width="5%" title="Jenkins" src="images/logo/Jenkins.svg"></code>
 <code><img width="5%" title="Telegram" src="images/logo/Telegram.svg"></code>
