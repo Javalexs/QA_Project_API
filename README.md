@@ -78,11 +78,6 @@ gradle clean test
   <img src="images/screen/AllureOPSAPI.jpg" alt="dashboard" width="900">
 </p>
 
-### Тест-кейсы
-
-<p align="center">
-  <img src="images/screenshot/allure-testops-testcases.png" alt="testcase" width="900">
-</p>
 
 ## <img width="4%" title="Telegram" src="images/logo/Telegram.svg"> Уведомления в Telegram с использованием бота
 После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне тестов.
