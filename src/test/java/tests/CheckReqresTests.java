@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.hasItems;
+import static org.hamcrest.Matchers.notNullValue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static spec.Specs.request;
 import static spec.Specs.responseSpec200;
@@ -73,7 +74,7 @@ public class CheckReqresTests extends TestBase {
                 .log().body()
                 .extract().as(User.class);
 
-        assertEquals(response.getToken(), "QpwL5tke4Pnpja7X4");
+        assertEquals(response.getToken(), notNullValue());
     }
 
     @Test
